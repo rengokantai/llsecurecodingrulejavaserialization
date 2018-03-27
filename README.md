@@ -29,3 +29,11 @@ Bicycle bike = (Bicycle)s.readObject();
 During serialization, the `writeReplace` method is executed first. If present, the `writeObject` method operates on the
 replacement object.
 `Deserialization` callback methods are invoked in the order.
+
+### Understand Java object externalization
+Serialization delegates `Externalizable` classes
+
+### Understand serialization security risks
+issues. Naive use of object serialization may allow a malicious party with access to the serialization byte stream to
+- Read private data
+- Create objects with invalid or dangerous state
